@@ -1,38 +1,75 @@
-.App {
+.header-color{
+  background: #BE93C5;
+  background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
+}
+.landing-grid{
+  background: #BE93C5;
+  background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
+  background: linear-gradient(to left, #7BC6CC, #BE93C5);
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-pic{
+  height:250px;
+  padding-top:5em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner-text{
+  background-color: black;
+  opacity:0.8;
+  width:75%;
+  margin:auto;
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner-text h1{
+  /*font-size:66px;*/
+  font-weight:bold;
+  color:white;
+  padding-top:20px;
+}
+.banner-text h2{
+  /*font-size:50px;*/
+  margin: 8px;
+  padding:8px;
+  font-weight:bold;
+  color:white;
+}
+.banner-text hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin:auto;
+}
+.banner-text p{
+  color:white;
+  font-size: 20px;
+  padding: 1em;
+  margin-top: 4px;
+  padding-top:4px;
+  margin-bottom: 4px;
+  padding-bottom:4px;
+}
+.banner-text span{
+  color:gray;
+  font-size: 18px;
+  /*padding: 1em;*/
+  /*margin-bottom: 16px;
+  padding-bottom:16px;*/
+}
+.social-links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 50%;
+  margin:auto;
+}
+.social-links i{
   color: white;
+  font-size: 5em;
+  padding: 8px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects-grid{
+  display: flex;
 }
