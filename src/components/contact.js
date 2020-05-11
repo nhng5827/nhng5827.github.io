@@ -1,10 +1,47 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import {Element} from 'react-scroll';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 class Contact extends Component {
-  render(){
-    return(
-      <div><h1>Contact Page</h1></div>
-    )
+  render() {
+    return (
+      <Element id='contact' name='contact'>
+      <Container fluid="fluid" className="contact-container">
+        <Row>
+          <Col>
+            <div className="contact-header">
+              <h2>Contact Me</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col>
+            <div className="contact-symbols">
+              <i class="fas fa-phone"></i>
+            </div>
+          </Col>
+          <Col>
+            <div className="contact-symbols">
+              <i class="far fa-envelope"></i>
+            </div>
+          </Col>
+          <Col></Col>
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col>
+            <div className="contact-info">303-406-3618</div>
+          </Col>
+          <Col>
+            <div className="contact-info">nhi.q.nguyen@colorado.edu</div>
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
+    </Element>
+  )
   }
 }
 

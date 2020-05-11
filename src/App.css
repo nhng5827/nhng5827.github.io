@@ -1,18 +1,38 @@
-.header-color{
+/*.navbar{
   background: #BE93C5;
   background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
   background: linear-gradient(to left, #7BC6CC, #BE93C5);
+  z-index:1000;
+}*/
+.navbar{
+  z-index:1000;
+  font-size:1.2em;
 }
+@media(min-width: 992px) {
+    .navbar.bg-dark {
+      background: #BE93C5!important;
+      background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5)!important;
+      background: linear-gradient(to left, #7BC6CC, #BE93C5)!important;
+      color: white;
+    }
+}
+/*@media(max-width: 768px) {
+    .navbar.bg-light {
+        background-color: red !important;
+    }
+}*/
+
 .landing-grid{
   background: #BE93C5;
   background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
   background: linear-gradient(to left, #7BC6CC, #BE93C5);
   text-align: center;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width:100%;
   height:100%;
+  padding-bottom: 150px;
 }
 .profile-pic{
   height:250px;
@@ -39,7 +59,7 @@
   color:white;
 }
 .banner-text hr{
-  border-top: 5px dotted white;
+  border-top: 5px solid white;
   width: 50%;
   margin:auto;
 }
@@ -73,3 +93,34 @@
 .projects-grid{
   display: flex;
 }
+.project-header{
+  color:#BE93C5;
+  text-align: center;
+}
+.contact-symbols i{
+  color: #7BC6CC;
+  font-size: 5em;
+  padding: 8px;
+}
+.contact-info{
+  color: white;
+  font-size: 1.5em;
+  padding: 8px;
+}
+.contact-container{
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  color: #BE93C5;
+}
+.about-text p{
+  color: white;
+  font-size: 1.5em;
+  width:60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*.about-text{
+  text-align: center;
+}*/
