@@ -121,6 +121,9 @@
   text-align: center;
   padding-bottom: 30px;
 }
+.school-grid{
+  display:flex;
+}
 /*.about-text{
   text-align: center;
 }*/

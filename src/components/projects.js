@@ -3,6 +3,7 @@ import {Tabs, Tab, Grid, Cell, IconButton} from 'react-mdl'
 import portfolioCard from '../assets/portfolioSS.png'
 import mdssCard from '../assets/MDSS.png';
 import scCard from '../assets/SCSS.png';
+import ftCard from '../assets/FTSS.png';
 import { Element } from 'react-scroll';
 import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
@@ -45,7 +46,7 @@ class Project extends Component {
       </Alert>
     );
   }
-  return <Button onClick={() => setShow(true)}>Show Demo</Button>;
+  return <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} onClick={() => setShow(true)}>Show Demo</Button>;
 }
 DemoSCYoutube() {
 const [show, setShow] = React.useState(false);
@@ -61,7 +62,7 @@ if (show) {
     </Alert>
   );
 }
-return <Button onClick={() => setShow(true)}>Show Demo</Button>;
+return <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} onClick={() => setShow(true)}>Show Demo</Button>;
 }
 
 toggleCategories(){
@@ -78,17 +79,9 @@ toggleCategories(){
         <Card.Body>
         <Card.Title style={{color:'#000'}}>DIA MDSS Display</Card.Title>
         <Card.Text>
-          Single-page web/mobile-web app for Denver Airport Decision Support System. My role was building out the front-end portion. Tech Used: Javascript, HTML/CSS, Highcharts, Bootstrap
+          Single-page web/mobile-web app for Denver Airport Decision Support System. My role was building out the front-end portion that makes GoLang API requests based on the region/site IDs. Tech Used: Javascript, HTML/CSS, Highcharts, Bootstrap
         </Card.Text>
-         {/* <CardActions border> */}
-          {/* <Button variant="primary" href="http://www.google.com">Demo</Button> */}
-          {/* <Button variant="primary" onClick={this.toggleDemo()}>Demo</Button> */}
-
           <this.DemoMDSSYoutube/>
-        {/* </CardActions> */}
-        {/*<CardMenu style={{color: '#fff'}}>
-          <IconButton name="share"/>
-        </CardMenu> */}
       </Card.Body>
       </Card>
     </div>
@@ -100,11 +93,11 @@ toggleCategories(){
       <Card shadow={5} style={{width:'450', margin:'auto'}}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + portfolioCard +") center / cover"}}/>
         <Card.Body>
-        <Card.Title style={{color:'#fff'}}>React Portfolio</Card.Title>
+        <Card.Title style={{color:'#000'}}>React Portfolio</Card.Title>
         <Card.Text>
           First React Project involving creating a React based portfolio site. Tech Used: React, React-MDL, React Router DOM
         </Card.Text>
-          <Button href="https://github.com/nhng5827/nhng5827.github.io">GitHub</Button>
+          <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/nhng5827/nhng5827.github.io">GitHub</Button>
         {/*<CardMenu style={{color: '#fff'}}>
           <IconButton name="share"/>
         </CardMenu> */}
@@ -124,7 +117,19 @@ toggleCategories(){
         </Card.Text>
 
           <this.DemoSCYoutube/>&nbsp;
-          <Button href="https://github.com/nhng5827/GraphicsFinal">GitHub</Button>
+          <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/nhng5827/GraphicsFinal">GitHub</Button>
+      </Card.Body>
+      </Card>
+      <Card shadow={5} style={{width:'450px', margin:'auto'}}>
+        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + ftCard +") center / cover"}}/>
+        <Card.Body>
+        <Card.Title style={{color:'#000'}}>Entreprenurial Capstone Project</Card.Title>
+        <Card.Text>
+          Re-made the Sweet Cow Louisville shop for my graphics final project. Tech Used: C++, OpenGL, GLUT
+        </Card.Text>
+
+          <this.DemoSCYoutube/>&nbsp;
+          <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/sendacrate/sendacrate.github.io">GitHub</Button>
       </Card.Body>
       </Card>
     </div>
