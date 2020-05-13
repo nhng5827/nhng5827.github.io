@@ -14,10 +14,10 @@ class Landing extends Component {
           <Col>
             <img className="profile-pic" alt="prof" src={profilepic}/>
             <div className="banner-text">
-              <h1>NHI NGUYEN</h1>
+              <h1 style={{color:'#BE93C5'}}>NHI NGUYEN</h1>
               <hr></hr>
-              <h2>Software Engineer</h2>
-              <p>JavaScript | jQuery | Python | HTML/CSS | Highcharts | JSON | Bootstrap | Bash Scripting | Photoshop</p>
+              <h2 style={{color:'#7BC6CC'}}>Software Engineer</h2>
+              <p>JavaScript | jQuery | Python | HTML/CSS | Highcharts | Bootstrap | Bash Scripting | Photoshop</p>
               <span>React | Ext JS | MySQL | Java | OpenLayers | Leaflet | HTML5 | SASS</span>
               <div className="social-links">
                 {/* LinkedIn */}
