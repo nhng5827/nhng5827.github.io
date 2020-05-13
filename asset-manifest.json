@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.7cd3cc61.chunk.css",
-    "main.js": "/static/js/main.d4a518f2.chunk.js",
-    "main.js.map": "/static/js/main.d4a518f2.chunk.js.map",
+    "main.css": "/static/css/main.d09b0b89.chunk.css",
+    "main.js": "/static/js/main.19963928.chunk.js",
+    "main.js.map": "/static/js/main.19963928.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e65a3091.js",
     "runtime-main.js.map": "/static/js/runtime-main.e65a3091.js.map",
     "static/css/2.73c5f83b.chunk.css": "/static/css/2.73c5f83b.chunk.css",
-    "static/js/2.477bc1cb.chunk.js": "/static/js/2.477bc1cb.chunk.js",
-    "static/js/2.477bc1cb.chunk.js.map": "/static/js/2.477bc1cb.chunk.js.map",
+    "static/js/2.76ab7037.chunk.js": "/static/js/2.76ab7037.chunk.js",
+    "static/js/2.76ab7037.chunk.js.map": "/static/js/2.76ab7037.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.dbc25859a0b41dec4ffe44c10bab2226.js": "/precache-manifest.dbc25859a0b41dec4ffe44c10bab2226.js",
+    "precache-manifest.d12ad49344d4717719979ffa2e358985.js": "/precache-manifest.d12ad49344d4717719979ffa2e358985.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.73c5f83b.chunk.css.map": "/static/css/2.73c5f83b.chunk.css.map",
-    "static/css/main.7cd3cc61.chunk.css.map": "/static/css/main.7cd3cc61.chunk.css.map",
-    "static/js/2.477bc1cb.chunk.js.LICENSE.txt": "/static/js/2.477bc1cb.chunk.js.LICENSE.txt",
+    "static/css/main.d09b0b89.chunk.css.map": "/static/css/main.d09b0b89.chunk.css.map",
+    "static/js/2.76ab7037.chunk.js.LICENSE.txt": "/static/js/2.76ab7037.chunk.js.LICENSE.txt",
     "static/media/FTSS.png": "/static/media/FTSS.feb30f00.png",
-    "static/media/MDSS.png": "/static/media/MDSS.70db86a1.png",
+    "static/media/IPSS.png": "/static/media/IPSS.b8a1ccdf.png",
+    "static/media/KWSS.png": "/static/media/KWSS.d25f283a.png",
+    "static/media/MDSS.png": "/static/media/MDSS.1f63568e.png",
+    "static/media/PDSS.png": "/static/media/PDSS.29061326.png",
+    "static/media/RESUMEnnguyen.pdf": "/static/media/RESUMEnnguyen.c6010119.pdf",
     "static/media/SCSS.png": "/static/media/SCSS.79aa14ed.png",
     "static/media/VRSS.png": "/static/media/VRSS.328e859b.png",
     "static/media/portfolioSS.png": "/static/media/portfolioSS.a6d50426.png",
@@ -24,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.e65a3091.js",
     "static/css/2.73c5f83b.chunk.css",
-    "static/js/2.477bc1cb.chunk.js",
-    "static/css/main.7cd3cc61.chunk.css",
-    "static/js/main.d4a518f2.chunk.js"
+    "static/js/2.76ab7037.chunk.js",
+    "static/css/main.d09b0b89.chunk.css",
+    "static/js/main.19963928.chunk.js"
   ]
 }
