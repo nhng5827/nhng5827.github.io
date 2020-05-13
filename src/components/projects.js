@@ -32,9 +32,9 @@ vidID = this.state.demo
 if (show) {
 
   return (
-    <Alert variant="light" onClose={() => setShow(false)} dismissible>
+    <Alert style={{padding:"10px"}} variant="light" onClose={() => setShow(false)} dismissible>
       <Alert.Heading>&nbsp;</Alert.Heading>
-      <YouTube videoId={vidID} opts={{height: '390', width: '390', playerVars: {autoplay: 1}
+      <YouTube videoId={vidID} opts={{height: '390', width: '100%', playerVars: {autoplay: 1}
     }}/>
 
     </Alert>
@@ -53,7 +53,7 @@ toggleCategories(){
 
         <CardDeck className="work-cards">
           <Col>
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'470px', background:"url(" + mdssCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>DIA MDSS Display</Card.Title>
@@ -65,7 +65,7 @@ toggleCategories(){
       </Card>
     </Col>
     <Col>
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "KFx8oMsfP1U"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "KFx8oMsfP1U"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + kwCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Kuwait Renewable Energy Operator Display</Card.Title>
@@ -81,7 +81,7 @@ toggleCategories(){
     <Row>
       <CardDeck className="work-cards2">
   <Col>
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "jSY8SgtDqBA"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "jSY8SgtDqBA"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + pdCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Pikalert Decision Support Display</Card.Title>
@@ -93,7 +93,7 @@ toggleCategories(){
       </Card>
     </Col>
     <Col>
-    <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "1RjUUyCHdRo"})}>
+    <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "1RjUUyCHdRo"})}>
     <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ipCard +") center / cover"}}/>
     <Card.Body>
     <Card.Title style={{color:'#000'}}>Image Player Update</Card.Title>
@@ -119,7 +119,7 @@ toggleCategories(){
       /*React Tab*/
       <div className="react-grid">
         <CardDeck className="react-cards">
-      <Card shadow={5} style={{width:'450', margin:'auto'}}>
+      <Card shadow={5} style={{maxWidth:'450', margin:'auto'}}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + portfolioCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>React Portfolio</Card.Title>
@@ -137,7 +137,7 @@ toggleCategories(){
       /*School Tab*/
       <div className="school-grid">
         <CardDeck className="school-cards">
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "H-E6FKToP2M"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "H-E6FKToP2M"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + scCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Sweet Cow Graphics Project</Card.Title>
@@ -148,7 +148,7 @@ toggleCategories(){
           <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/nhng5827/GraphicsFinal">GitHub</Button>
       </Card.Body>
       </Card>
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "IM8rUX7QuC4"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "IM8rUX7QuC4"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + ftCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Entreprenurial Capstone Project</Card.Title>
@@ -160,7 +160,7 @@ toggleCategories(){
       </Card.Body>
       </Card>
 
-      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "Df1K4sB7FDk"})}>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "Df1K4sB7FDk"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + vrCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>VR Final Project</Card.Title>
