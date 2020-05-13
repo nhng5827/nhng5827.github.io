@@ -5,6 +5,9 @@ import mdssCard from '../assets/MDSS.png';
 import scCard from '../assets/SCSS.png';
 import ftCard from '../assets/FTSS.png';
 import vrCard from '../assets/VRSS.png';
+import kwCard from '../assets/KWSS.png';
+import pdCard from '../assets/PDSS.png';
+import ipCard from '../assets/IPSS.png';
 import { Element } from 'react-scroll';
 import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
@@ -31,7 +34,7 @@ if (show) {
   return (
     <Alert variant="light" onClose={() => setShow(false)} dismissible>
       <Alert.Heading>&nbsp;</Alert.Heading>
-      <YouTube videoId={vidID} opts={{height: '390', width: '400', playerVars: {autoplay: 1}
+      <YouTube videoId={vidID} opts={{height: '390', width: '390', playerVars: {autoplay: 1}
     }}/>
 
     </Alert>
@@ -45,18 +48,70 @@ toggleCategories(){
     return(
       /*Work Tab*/
       <div className="work-grid">
+        <Container className="work-container">
+          <Row>
+
         <CardDeck className="work-cards">
-      <Card shadow={5} style={{width:'450px', margin:'auto'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + mdssCard +") center / cover"}}/>
+          <Col>
+      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
+        <Card.Img variant="top" style={{color:'#fff', height:'470px', background:"url(" + mdssCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>DIA MDSS Display</Card.Title>
         <Card.Text>
-          Single-page web/mobile-web app for Denver Airport Decision Support System. My role was building out the front-end portion that makes GoLang API requests based on the region/site IDs. Tech Used: Javascript, HTML/CSS, Highcharts, Bootstrap
+          Single-page web/mobile-web app for Denver Airport Decision Support System. My role was building out the front-end portion that makes GoLang API requests to a JSON structured MondgoDB based on the region/site IDs. Tech Used: Javascript, HTML/CSS, Highcharts, Bootstrap, Apache User Authentication
         </Card.Text>
           <this.DemoYoutube/>
       </Card.Body>
       </Card>
+    </Col>
+    <Col>
+      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "KFx8oMsfP1U"})}>
+        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + kwCard +") center / cover"}}/>
+        <Card.Body>
+        <Card.Title style={{color:'#000'}}>Kuwait Renewable Energy Operator Display</Card.Title>
+        <Card.Text>
+          Renewable energy forecast display for grid operators to use and see power output. There are interactive graphs for solar, wind, total forecasts, as well as observations. The historical displays allow a use to go back in time to see the forecasts and observations overlaid. Tech Used: Javascript, HTML/CSS, Highcharts, Bootstrap, Apache User Authentication
+        </Card.Text>
+          <this.DemoYoutube/>
+      </Card.Body>
+      </Card>
+    </Col>
     </CardDeck>
+    </Row>
+    <Row>
+      <CardDeck className="work-cards2">
+  <Col>
+      <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "jSY8SgtDqBA"})}>
+        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + pdCard +") center / cover"}}/>
+        <Card.Body>
+        <Card.Title style={{color:'#000'}}>Pikalert Decision Support Display</Card.Title>
+        <Card.Text>
+          Assisted the original Pikalert Display engineer in updating the display to be more modern. Tasks included adding interactive plots, and a more modern approach to listing sites/segments/vehicles. Tech Used: Sencha Ext JS Framework, Javascript, HTML/CSS, Highcharts
+        </Card.Text>
+          <this.DemoYoutube/>
+      </Card.Body>
+      </Card>
+    </Col>
+    <Col>
+    <Card shadow={5} style={{width:'450px'}} onClick ={() => this.setState({demo: "1RjUUyCHdRo"})}>
+    <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ipCard +") center / cover"}}/>
+    <Card.Body>
+    <Card.Title style={{color:'#000'}}>Image Player Update</Card.Title>
+    <Card.Text>
+      Took open-source code from Josep Llodrà and add features to an image player/looper to allow for moving the slider and speeding up/down the animation. Tech Used: Javascript, jQuery
+    </Card.Text>
+      <this.DemoYoutube/>&nbsp;
+      <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/nhng5827/imageplayer">GitHub</Button>
+    </Card.Body>
+    </Card>
+  </Col>
+</CardDeck>
+</Row>
+
+
+
+
+</Container>
     </div>
     )
   }else if(this.state.activeTab === 1){

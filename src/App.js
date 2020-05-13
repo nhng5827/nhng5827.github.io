@@ -12,6 +12,7 @@ import Projects from './components/projects';
 import Landing from './components/landingpage';
 import About from './components/aboutme';
 import Contact from './components/contact';
+import Pdf from './assets/RESUMEnnguyen.pdf'
 // import Scroll from 'react-scroll'
 // import { Link } from 'react-router-dom';
 import * as Scroll from 'react-scroll';
@@ -28,7 +29,7 @@ function App() {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav activeKey="../" className="ml-auto">
                 {/* <Nav.Link href="/resume">Resume</Nav.Link> */}
-                {/* <Nav.Link href="/aboutme">About Me</Nav.Link> */}
+                <Nav.Link href={Pdf}>Resume</Nav.Link>
                 <Nav.Link><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Link></Nav.Link>
                 <Nav.Link><Link to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></Nav.Link>
                 <Nav.Link><Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></Nav.Link>

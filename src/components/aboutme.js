@@ -24,6 +24,8 @@ class About extends Component {
   Each of them feature interactive charts using Highcharts plotting packages that I have spent a lot of time with learning on my own.
 Though the tech stack doesn't range very far at my current job, I have been teaching myself React to expand my skills.
 Beyond the front-end scope, I hope to gain experience using Node.js.</p>
+<br></br>
+  <p>In my free time, I play ultimate frisbee on an elite level for Colorado Molly Brown, and have been able to represent the country at the U24 and U20 levels. I am actively coaching at Monarch High School, as well as over the summer at a youth league. I also enjoy climbing, skiing, and hiking when I'm not coding.</p>
 </div>
 </Col>
 </Row>
