@@ -1,9 +1,4 @@
-/*.navbar{
-  background: #BE93C5;
-  background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
-  background: linear-gradient(to left, #7BC6CC, #BE93C5);
-  z-index:1000;
-}*/
+
 .navbar{
   z-index:1000;
   font-size:1.2em;
@@ -16,11 +11,6 @@
       color: white;
     }
 }
-/*@media(max-width: 768px) {
-    .navbar.bg-light {
-        background-color: red !important;
-    }
-}*/
 
 .landing-grid{
   background: #BE93C5;
@@ -46,13 +36,11 @@
   border-radius: 10px;
 }
 .banner-text h1{
-  /*font-size:66px;*/
   font-weight:bold;
   color:white;
   padding-top:20px;
 }
 .banner-text h2{
-  /*font-size:50px;*/
   margin: 8px;
   padding:8px;
   font-weight:bold;
@@ -75,9 +63,6 @@
 .banner-text span{
   color:gray;
   font-size: 18px;
-  /*padding: 1em;*/
-  /*margin-bottom: 16px;
-  padding-bottom:16px;*/
 }
 .social-links{
   display: flex;
@@ -131,59 +116,18 @@
 }
 .school-grid{
   display:flex;
-  /*text-align:center;*/
   margin: 0 auto;
   justify-content: center;
 }
 .container, .row, .col{
-  /*margin: 0 auto;*/
   justify-content: center;
 }
-.work-cards{
-  /*display:flex;*/
-  /*text-align:center;*/
-  /*margin: 0 auto;*/
-  /*justify-content: center;*/
-}
+
 @media(max-width: 1200px) {
   .card-deck{
     display:block!important;
   }
 }
-/*@media(max-width: 1204px) {
-  .card-deck{
-    display:flex!important;
-  }
-}*/
-
 .work-cards2{
   margin-top:20px;
 }
-/*.card-style {
-  max-width: 30%;
-}*/
-
-.tabs .tab a {
-  color: rgba(38, 166, 154, 0.7);
-  /*Custom Text Color*/
-}
-
-.tabs .tab a:hover {
-  color:#26a69a;
-  /*Custom Color On Hover*/
-}
-
-.tabs .tab a:focus.active {
-  color:#26a69a;
-  /*Custom Text Color While Active*/
-  background-color: rgba(38, 166, 154, 0.2);
-  /*Custom Background Color While Active*/
-}
-
-.tabs .indicator {
-  background-color:#26a69a;
-  /*Custom Color Of Indicator*/
-}
-/*.about-text{
-  text-align: center;
-}*/

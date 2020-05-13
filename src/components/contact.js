@@ -15,29 +15,21 @@ class Contact extends Component {
             </div>
           </Col>
         </Row>
+      <Row></Row>
         <Row>
-          <Col></Col>
+          {/* <Col></Col> */}
           <Col>
             <div className="contact-symbols">
               <i class="fas fa-phone"></i>
             </div>
+            <div className="contact-info">303-406-3618</div>
           </Col>
           <Col>
             <div className="contact-symbols">
               <i class="far fa-envelope"></i>
             </div>
-          </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col>
-            <div className="contact-info">303-406-3618</div>
-          </Col>
-          <Col>
             <div className="contact-info">nhi.q.nguyen@colorado.edu</div>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
     </Element>
