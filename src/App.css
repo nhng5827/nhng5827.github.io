@@ -11,7 +11,9 @@
       color: white;
     }
 }
-
+.nav-link.active{
+  color:rgba(255,255,255,.5)!important;
+}
 .landing-grid{
   background: #BE93C5;
   background: -webkit-linear-gradient(to left, #7BC6CC, #BE93C5);
