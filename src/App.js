@@ -27,7 +27,7 @@ function App() {
     <Navbar.Brand href="../">NHI NGUYEN</Navbar.Brand>
     <Navbar.Toggle className="header-toggle" aria-controls="responsive-navbar-nav" bg="dark"/>
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav activeKey="../" className="ml-auto">
+      <Nav activeKey="" className="ml-auto">
                 {/* <Nav.Link href="/resume">Resume</Nav.Link> */}
                 <Nav.Link href={Pdf}>Resume</Nav.Link>
                 <Nav.Link eventKey={0} as={Link} to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Nav.Link>
