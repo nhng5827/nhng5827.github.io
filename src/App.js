@@ -30,9 +30,9 @@ function App() {
       <Nav activeKey="../" className="ml-auto">
                 {/* <Nav.Link href="/resume">Resume</Nav.Link> */}
                 <Nav.Link href={Pdf}>Resume</Nav.Link>
-                <Nav.Link><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Link></Nav.Link>
-                <Nav.Link><Link to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link></Nav.Link>
-                <Nav.Link><Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</Link></Nav.Link>
+                <Nav.Link eventKey={0} as={Link} to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Nav.Link>
+                <Nav.Link eventKey={1} as={Link} to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Nav.Link>
+                <Nav.Link eventKey={2} as={Link} to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</Nav.Link>
                 {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
               </Nav>
     </Navbar.Collapse>
