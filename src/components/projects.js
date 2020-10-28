@@ -9,6 +9,8 @@ import kwCard from '../assets/KWSS.png';
 import pdCard from '../assets/PDSS.png';
 import ipCard from '../assets/IPSS.png';
 import mbCard from '../assets/MBSS.png';
+import ciCard from '../assets/CISS.png';
+import dcCard from '../assets/DCSS.png';
 import { Element } from 'react-scroll';
 import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
@@ -53,7 +55,6 @@ toggleCategories(){
           <Row>
 
         <CardDeck className="work-cards">
-          <Col>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'470px', background:"url(" + mdssCard +") center / cover"}}/>
         <Card.Body>
@@ -64,8 +65,17 @@ toggleCategories(){
           <this.DemoYoutube/>
       </Card.Body>
       </Card>
-    </Col>
-    <Col>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "3ZMn73jRL1M"})}>
+        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>
+        <Card.Body>
+        <Card.Title style={{color:'#000'}}>GIS Data Converter Display</Card.Title>
+        <Card.Text>
+          Assisted the GIS group to replace the mapping function that was soon to be disabled by browsers. This included a full re-do of the front-end code in AngularJS to incorporate Leaflet. Tech Used: AngularJS, Typescript, HTML/CSS, Leaflet, geoJSON, Drupal CMS
+        </Card.Text>
+          <this.DemoYoutube/>&nbsp;
+          {/*}<Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://gisclimatechange.ucar.edu/inspector">Live Display</Button>*/}
+      </Card.Body>
+      </Card>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "KFx8oMsfP1U"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + kwCard +") center / cover"}}/>
         <Card.Body>
@@ -76,7 +86,7 @@ toggleCategories(){
           <this.DemoYoutube/>
       </Card.Body>
       </Card>
-    </Col>
+
     </CardDeck>
     </Row>
     <Row>
@@ -93,6 +103,17 @@ toggleCategories(){
       </Card.Body>
       </Card>
     </Col>
+    <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "2KUcGBojpic"})}>
+    <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ciCard +") center / cover"}}/>
+    <Card.Body>
+    <Card.Title style={{color:'#000'}}>GIS Climate Change Inspector Display</Card.Title>
+    <Card.Text>
+      Assisted the GIS group in updating some front-end options. This required some Java servlet updates to reflect front-end options. Tech Used: Javascript, Java, XML, HTML/CSS
+    </Card.Text>
+      <this.DemoYoutube/>&nbsp;
+      <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://gisclimatechange.ucar.edu/inspector">Live Display</Button>
+    </Card.Body>
+    </Card>
     <Col>
     <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "1RjUUyCHdRo"})}>
     <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ipCard +") center / cover"}}/>
@@ -111,7 +132,6 @@ toggleCategories(){
 
 
 
-
 </Container>
     </div>
     )
@@ -119,8 +139,10 @@ toggleCategories(){
     return(
       /*React Tab*/
       <div className="react-grid">
+      <Container className="work-container">
+      <Row>
         <CardDeck className="react-cards">
-      <Card shadow={5} style={{maxWidth:'450', margin:'auto'}}>
+      <Card shadow={5} style={{maxWidth:'450'}}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + portfolioCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>React Portfolio</Card.Title>
@@ -130,24 +152,39 @@ toggleCategories(){
           <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/nhng5827/nhng5827.github.io">GitHub</Button>
       </Card.Body>
       </Card>
-      <Card shadow={5} style={{maxWidth:'450', margin:'auto'}}>
+      <Card shadow={5} style={{maxWidth:'450'}}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + mbCard +") center / cover"}}/>
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Molly Brown Team Website</Card.Title>
         <Card.Text>
-          Team website providing information such as rosters, schedule, and sponsors. I plan to add features such as blogging for players. Tech Used: React, React-Bootstrap
+          Team website providing information such as rosters, schedule, and sponsors. There is a blog incorporated but no player login or claps features added..yet. Tech Used: React, React-Bootstrap, Netlify, React-Navi
         </Card.Text>
         <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://www.coloradomollybrown.com/">Website</Button>&nbsp;
           <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://github.com/mollybrowntown/mollybrowntown.github.io">GitHub</Button>
       </Card.Body>
       </Card>
+      <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "3ZMn73jRL1M"})}>
+        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>
+        <Card.Body>
+        <Card.Title style={{color:'#000'}}>GIS Data Converter Display</Card.Title>
+        <Card.Text>
+        Assisted the GIS group to replace the mapping function that was soon to be disabled by browsers. This included a full re-do of the front-end code in AngularJS to incorporate Leaflet. Tech Used: AngularJS, Typescript, HTML/CSS, Leaflet, geoJSON, Drupal CMS
+        </Card.Text>
+          <this.DemoYoutube/>&nbsp;
+          {/*<Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://gisclimatechange.ucar.edu/inspector">Live Display</Button>*/}
+      </Card.Body>
+      </Card>
     </CardDeck>
+    </Row>
+    </Container>
     </div>
     )
   }else if(this.state.activeTab === 2){
     return(
       /*School Tab*/
       <div className="school-grid">
+      <Container className="work-container">
+      <Row>
         <CardDeck className="school-cards">
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "H-E6FKToP2M"})}>
         <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + scCard +") center / cover"}}/>
@@ -184,6 +221,8 @@ toggleCategories(){
       </Card.Body>
       </Card>
   </CardDeck>
+  </Row>
+  </Container>
     </div>
     )
   }
@@ -198,7 +237,7 @@ toggleCategories(){
       </div>
         <Tabs TabIndicatorProps={{style: {background:'green'}}} activeTab ={this.state.activeTab} onChange ={(tabId) => this.setState({activeTab: tabId})} ripple>
           <Tab>Work</Tab>
-          <Tab>React</Tab>
+          <Tab>React/Angular</Tab>
           <Tab>School</Tab>
         </Tabs>
           <Grid>

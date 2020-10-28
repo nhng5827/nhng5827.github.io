@@ -19,10 +19,8 @@ class About extends Component {
   <Col>
   <div className="about-text">
   <p>I'm a software engineer based in Boulder, CO with a passion for coding.
-    My focus over the past 2 years in my professional career have been based around front-end JavaScript development for displays and data visualizations.
-  These various displays and single-page webapps were built ground-up with only the addition of Bootstrap and jQuery libraries, or using the Ext JS Framework.
-  Each of them feature interactive charts using Highcharts plotting packages that I have spent a lot of time with learning on my own.
-Though the tech stack doesn't range very far at my current job, I have been teaching myself React to expand my skills.
+    My focus over the past 2 years in my professional career have been based around front-end JavaScript development for displays, data visualizations, and mapping.
+  The first three applications' front-end listed under the work projects were built 100% by me. But, the GIS Data Converter project was a re-write of pre-existing PHP code, so some aspects were translated over. The other three I was pulled in to help on certain aspects, and I maintain these still. There are several other smaller displays, python tasks, that I have been a part of as well, such as writing archiving scripts in python.
 Beyond the front-end scope, I hope to gain experience using Node.js.</p>
 <br></br>
   <p>In my free time, I play ultimate frisbee on an elite level for Colorado Molly Brown, and have been able to represent the country at the U24 and U20 levels. I am actively coaching at Monarch High School, as well as over the summer at a youth league. I also enjoy climbing, skiing, and hiking when I'm not coding.</p>
