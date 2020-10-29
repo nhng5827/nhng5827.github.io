@@ -20,6 +20,8 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 class Project extends Component {
   constructor(props){
     super(props);
@@ -56,7 +58,14 @@ toggleCategories(){
 
         <CardDeck className="work-cards">
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "_wDq7r4BWJk"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'470px', background:"url(" + mdssCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="mdss"
+        effect="blur"
+        src={mdssCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+    {/*<Card.Img variant="top" style={{color:'#fff', height:'470px', background:"url(" + mdssCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>DIA MDSS Display</Card.Title>
         <Card.Text>
@@ -66,7 +75,14 @@ toggleCategories(){
       </Card.Body>
       </Card>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "3ZMn73jRL1M"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="data-converter"
+        effect="blur"
+        src={dcCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+    {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>GIS Data Converter Display</Card.Title>
         <Card.Text>
@@ -77,7 +93,14 @@ toggleCategories(){
       </Card.Body>
       </Card>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "KFx8oMsfP1U"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + kwCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="kuwait"
+        effect="blur"
+        src={kwCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + kwCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Kuwait Renewable Energy Operator Display</Card.Title>
         <Card.Text>
@@ -93,7 +116,14 @@ toggleCategories(){
       <CardDeck className="work-cards2">
   <Col>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "jSY8SgtDqBA"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + pdCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="pikalert"
+        effect="blur"
+        src={pdCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + pdCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Pikalert Decision Support Display</Card.Title>
         <Card.Text>
@@ -104,7 +134,14 @@ toggleCategories(){
       </Card>
     </Col>
     <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "2KUcGBojpic"})}>
-    <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ciCard +") center / cover"}}/>
+    <LazyLoadImage
+      alt="climate-inspector"
+      effect="blur"
+      src={ciCard} // use normal <img> attributes as props
+      width='100%'
+      height="470px"
+    style={{objectFit: 'cover'}} />
+    {/*<Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ciCard +") center / cover"}}/>*/}
     <Card.Body>
     <Card.Title style={{color:'#000'}}>GIS Climate Change Inspector Display</Card.Title>
     <Card.Text>
@@ -116,7 +153,14 @@ toggleCategories(){
     </Card>
     <Col>
     <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "1RjUUyCHdRo"})}>
-    <Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ipCard +") center / cover"}}/>
+    <LazyLoadImage
+      alt="image-player"
+      effect="blur"
+      src={ipCard} // use normal <img> attributes as props
+      width='100%'
+      height="470px"
+    style={{objectFit: 'cover'}} />
+    {/*<Card.Img variant="top" style={{color:'#fff', height:'500px', background:"url(" + ipCard +") center / cover"}}/>*/}
     <Card.Body>
     <Card.Title style={{color:'#000'}}>Image Player Update</Card.Title>
     <Card.Text>
@@ -143,7 +187,14 @@ toggleCategories(){
       <Row>
         <CardDeck className="react-cards">
       <Card shadow={5} style={{maxWidth:'450'}}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + portfolioCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="portfolio"
+        effect="blur"
+        src={portfolioCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + portfolioCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>React Portfolio</Card.Title>
         <Card.Text>
@@ -153,7 +204,14 @@ toggleCategories(){
       </Card.Body>
       </Card>
       <Card shadow={5} style={{maxWidth:'450'}}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + mbCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="molly-brown"
+        effect="blur"
+        src={mbCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + mbCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Molly Brown Team Website</Card.Title>
         <Card.Text>
@@ -164,7 +222,14 @@ toggleCategories(){
       </Card.Body>
       </Card>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "3ZMn73jRL1M"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="data-converter"
+        effect="blur"
+        src={dcCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + dcCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>GIS Data Converter Display</Card.Title>
         <Card.Text>
@@ -187,7 +252,14 @@ toggleCategories(){
       <Row>
         <CardDeck className="school-cards">
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "H-E6FKToP2M"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + scCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="graphics"
+        effect="blur"
+        src={scCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'450px', background:"url(" + scCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Sweet Cow Graphics Project</Card.Title>
         <Card.Text>
@@ -198,7 +270,14 @@ toggleCategories(){
       </Card.Body>
       </Card>
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "IM8rUX7QuC4"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + ftCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="capstone"
+        effect="blur"
+        src={ftCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + ftCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>Entreprenurial Capstone Project</Card.Title>
         <Card.Text>
@@ -210,7 +289,14 @@ toggleCategories(){
       </Card>
 
       <Card shadow={5} style={{maxWidth:'450px'}} onClick ={() => this.setState({demo: "Df1K4sB7FDk"})}>
-        <Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + vrCard +") center / cover"}}/>
+      <LazyLoadImage
+        alt="unity"
+        effect="blur"
+        src={vrCard} // use normal <img> attributes as props
+        width='100%'
+        height="470px"
+      style={{objectFit: 'cover'}} />
+        {/*<Card.Img variant="top" style={{color:'#fff', height:'430px', background:"url(" + vrCard +") center / cover"}}/>*/}
         <Card.Body>
         <Card.Title style={{color:'#000'}}>VR Final Project</Card.Title>
         <Card.Text>

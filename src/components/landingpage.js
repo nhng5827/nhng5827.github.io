@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import profilepic from '../assets/prof.png';
-import profileLow from '../assets/proflow.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 class Landing extends Component {
@@ -22,7 +21,7 @@ class Landing extends Component {
       // beforeLoad={() => console.log(beforeLoadText)}
       effect="blur"
       // placeholder={<img src={banner1Low} width="100%" height="800px"/>}
-     placeholderSrc={profileLow} // use normal <img> attributes as props
+     //placeholderSrc={profileLow} // use normal <img> attributes as props
       src={profilepic} // use normal <img> attributes as props
       />
             {/*<img className="profile-pic" alt="prof" src={profilepic}/>*/}
