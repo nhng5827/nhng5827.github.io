@@ -15,15 +15,11 @@ class Landing extends Component {
         <Row>
           <Col>
           <LazyLoadImage
-      alt="profile"
-      className="profile-pic"
-      // afterLoad={() => console.log(afterLoadText)}
-      // beforeLoad={() => console.log(beforeLoadText)}
-      effect="blur"
-      // placeholder={<img src={banner1Low} width="100%" height="800px"/>}
-     //placeholderSrc={profileLow} // use normal <img> attributes as props
-      src={profilepic} // use normal <img> attributes as props
-      />
+            alt="profile"
+            className="profile-pic"
+            effect="blur"
+            src={profilepic} // use normal <img> attributes as props
+            />
             {/*<img className="profile-pic" alt="prof" src={profilepic}/>*/}
             <div className="banner-text">
               <h1 style={{color:'#BE93C5'}}>NHI NGUYEN</h1>
