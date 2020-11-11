@@ -236,7 +236,7 @@ toggleCategories(){
         Assisted the GIS group to replace the mapping function that was soon to be disabled by browsers. This included a full re-do of the front-end code in AngularJS to incorporate Leaflet. Tech Used: AngularJS, Typescript, HTML/CSS, Leaflet, geoJSON, Drupal CMS
         </Card.Text>
           <this.DemoYoutube/>&nbsp;
-          {/*<Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://gisclimatechange.ucar.edu/inspector">Live Display</Button>*/}
+          <Button style={{'background-color':'#BE93C5', 'border-color':'#BE93C5'}} href="https://gisclimatechange.ucar.edu/gis-climatedata">Live Display</Button>
       </Card.Body>
       </Card>
     </CardDeck>
